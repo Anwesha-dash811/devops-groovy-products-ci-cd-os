@@ -24,6 +24,11 @@ class ProductController {
 	
 	 @Autowired
     ProductService ProductService
+	
+	@GetMapping("/home")
+	String Index() {
+		"Home"
+	}
 
     @GetMapping
     List<Product> getAllProductList(){
